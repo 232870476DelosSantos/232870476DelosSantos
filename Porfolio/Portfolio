@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #ff9900;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .project {
+            margin-bottom: 3em;
+        }
+
+        .project h2 {
+            color: #333;
+        }
+
+        .project-description {
+            background-color: #fafafa;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Web Development Portfolio</h1>
+        <p>Welcome to my personal portfolio. Here are some of my projects:</p>
+    </header>
+
+    <nav>
+        <a href="#survey-form">Survey Form</a>
+        <a href="#tribute-page">Tribute Page</a>
+        <a href="#documentation">Documentation Page</a>
+        <a href="#landing-page">Landing Page</a>
+    </nav>
+
+    <main>
+        <section id="survey-form" class="project">
+            <h2>Survey Form</h2>
+            <div class="project-description">
+                <p>A responsive survey form designed using HTML and CSS for IT students. This project showcases form handling, styling, and layout using flexbox and CSS grids.</p>
+                <a href="survey-form.html" target="_blank">View the Survey Form Project</a>
+            </div>
+        </section>
+
+        <section id="tribute-page" class="project">
+            <h2>Lebron James Tribute Page</h2>
+            <div class="project-description">
+                <p>This tribute page showcases Lebron James and his accolades. It uses HTML for structuring content and CSS for styling and layout.</p>
+                <a href="tribute-page.html" target="_blank">View the Tribute Page</a>
+            </div>
+        </section>
+
+        <section id="documentation" class="project">
+            <h2>TaskMaster Documentation</h2>
+            <div class="project-description">
+                <p>TaskMaster is a task management system with detailed documentation. This project demonstrates HTML, CSS, and proper usage of headings, links, and sections for organized information display.</p>
+                <a href="documentation-page.html" target="_blank">View the Documentation Page</a>
+            </div>
+        </section>
+
+        <section id="landing-page" class="project">
+            <h2>Landing Page</h2>
+            <div class="project-description">
+                <p>A responsive landing page with a navigation bar and sign-up form. This project highlights skills in responsive design and front-end development using HTML and CSS.</p>
+                <a href="landing-page.html" target="_blank">View the Landing Page</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
