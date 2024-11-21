@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "c:\\Users\\Cyrus Delos Santos\\Desktop\\cyrusFCC\\232870476DelosSantos",
+			"problemMatcher": [
+				"$go"
+			],
+			"label": "Live Preview: Run Server"
+		}
+	]
+}

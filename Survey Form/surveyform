@@ -12,12 +12,24 @@
     </title>
 
     <style>
-        /* Styling the Body element 
-        i.e. Color, Font, Alignment */
+        /* Styling the Body element */
+        /* Adding a colorful gradient background */
         body {
-            background-color: #05c46b;
+            background: linear-gradient(45deg, #FF6F61, #6A5ACD, #FFD700, #32CD32);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
             font-family: Verdana;
             text-align: center;
+            margin: 0;
+            height: 100vh;
+            color: #fff;
+        }
+
+        /* Animating the gradient */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         /* Styling the Form (Color, Padding, Shadow) */
@@ -27,6 +39,7 @@
             margin: 50px auto;
             padding: 30px 20px;
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
         }
 
         /* Styling form-control Class */
@@ -39,6 +52,7 @@
         .form-control label {
             display: block;
             margin-bottom: 10px;
+            color: #333;
         }
 
         /* Styling form-control input, 
@@ -52,6 +66,7 @@
             padding: 10px;
             display: block;
             width: 95%;
+            color: #333;
         }
 
         /* Styling form-control Radio 
@@ -73,6 +88,11 @@
             width: 100%;
             margin-top: 50px;
             margin-bottom: 20px;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -123,9 +143,7 @@
             <select name="role" id="role">
                 <option value="student">Student</option>
                 <option value="intern">Intern</option>
-                <option value="professional">
-                    Professional
-                </option>
+                <option value="professional">Professional</option>
                 <option value="other">Other</option>
             </select>
         </div>
@@ -133,63 +151,46 @@
         <div class="form-control">
             <label>
                 What programming languages are you most comfortable with? (Check all that apply)
-                to a friend?
             </label>
 
             <!-- Input Type Radio Button -->
             <label for="recommed-1">
-                <input type="radio" id="recommed-1" 
-                       name="recommed"> Html
-                  </input>
+                <input type="radio" id="recommed-1" name="recommed"> Html
             </label>
             <label for="recommed-2">
-                <input type="radio" id="recommed-2" 
-                       name="recommed">Java
-                  </input>
+                <input type="radio" id="recommed-2" name="recommed"> Java
             </label>
             <label for="recommed-3">
-                <input type="radio" id="recommed-3" 
-                       name="recommed">C++
-                  </input>
+                <input type="radio" id="recommed-3" name="recommed"> C++
             </label>
         </div>
+
         <div class="form-control">
             <label>
                 What challenges have you faced in your IT studies? (Select all that apply)
-                
             </label>
 
             <!-- Input Type Radio Button -->
             <label for="recommed-1">
-                <input type="radio" id="recommed-1" 
-                       name="recommed">Difficulty with programming concepts
-                  </input>
+                <input type="radio" id="recommed-1" name="recommed"> Difficulty with programming concepts
             </label>
             <label for="recommed-2">
-                <input type="radio" id="recommed-2" 
-                       name="recommed">ack of resources (books, software, etc.)
-                  </input>
+                <input type="radio" id="recommed-2" name="recommed"> Lack of resources (books, software, etc.)
             </label>
             <label for="recommed-3">
-                <input type="radio" id="recommed-3" 
-                       name="recommed"> Lack of support from instructors or peers
-                  </input>
+                <input type="radio" id="recommed-3" name="recommed"> Lack of support from instructors or peers
             </label>
         </div>
 
         <div class="form-control">
-            <label>Do you have any certifications in IT-related fields?
-            </label>
+            <label>Do you have any certifications in IT-related fields?</label>
             <!-- Input Type Checkbox -->
             <label for="inp-1">
-                <input type="checkbox" name="inp">Yes
-                  </input>
-              </label>
-            <label for="inp-2">
-                <input type="checkbox" name="inp">No
-                  </input>
+                <input type="checkbox" name="inp"> Yes
             </label>
-            
+            <label for="inp-2">
+                <input type="checkbox" name="inp"> No
+            </label>
         </div>
 
         <div class="form-control">
@@ -198,12 +199,10 @@
             </label>
 
             <!-- multi-line text input control -->
-            <textarea name="comment" id="comment" 
-                      placeholder="Enter your comment here">
-            </textarea>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
         </div>
 
-        <!-- Multi-line Text Input Control -->
+        <!-- Submit Button -->
         <button type="submit" value="submit">
             Submit
         </button>
